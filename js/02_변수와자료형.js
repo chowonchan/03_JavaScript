@@ -218,14 +218,14 @@ function typeCheck(){
   /* undefind : 정의 되지 않은 변수 / 값 대입 X 또는 존재 X 변수 */
   let undef; // undef 변수 선언
   console.log("undef : ", undef, typeof undef);
-  //          문자열 : 저장된 값 자료형
+  //          문자열 :   저장된값   자료형
 
   /* string(문자열) : "" 또는 '' 내부에 작성된 값 */
   /* ex) " 홍길동 " == ' 홍길동 ' */
   const name = "홍길동";
   const phone = "01012341234"
 
-  console.log("name : ", name , typeof name);
+  console.log("name  : ", name , typeof name);
   console.log("phone : ", phone , typeof phone);
 
 
