@@ -182,9 +182,11 @@ function cssTest2(){
   div[1].style.backgroundColor = "purple";
   div[2].style.backgroundColor = "blue";
 
-  const test2 = document.querySelector('[target2-div = css2-div] > div');
-
-  test2.style.fontFamily = "궁서체";
-  div[1].style.fontSize = "50px";
-
+  const test1 = document.querySelector('[target2-div = css2-div] > div');
+  
+  test1.style.fontFamily = "궁서체";
+  
+  const test2 = document.querySelector('[target2-div = css2-div] > div:nth-child(2)');
+  test2.style.fontSize = "50px";
+  
 }
