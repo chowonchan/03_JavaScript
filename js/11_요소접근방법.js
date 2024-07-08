@@ -158,3 +158,33 @@ function cssTest1(){
   
   test1.style.fontSize = "30px";
 }
+
+
+function cssTest2(){
+
+  const container = document.querySelector('[target2-div = css2-div]');
+
+  container.style.width = "300px";
+  container.style.height = "420px";
+  container.style.border = "15px solid yellow";
+
+  const div = document.querySelectorAll('[target2-div = css2-div] > div');
+
+  for(let i =0; i< div.length; i++){
+    div[i].style.height = "33.33%";
+
+    div[i].style.display = "flex";
+    div[i].style.justifyContent = "center";
+    div[i].style.alignItems = "center";
+  }
+
+  div[0].style.backgroundColor = "pink";
+  div[1].style.backgroundColor = "purple";
+  div[2].style.backgroundColor = "blue";
+
+  const test2 = document.querySelector('[target2-div = css2-div] > div');
+
+  test2.style.fontFamily = "궁서체";
+  div[1].style.fontSize = "50px";
+
+}
